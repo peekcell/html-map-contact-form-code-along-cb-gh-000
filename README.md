@@ -60,7 +60,11 @@ Next let's add a contact form. Under our `<!-- Contact Form -->` comment let's s
 
 ```html
 <!-- Contact Form -->
-<form>...</form>
+<form action="#" method="post">
+  <label for="fullname">Name</label>
+  <input type="text" id="fullname" placeholder="your name" required>
+
+</form>
 ```
 
 We need to give our opening form element two attributes. The first is an action which is the location that our form will submit its input information to. In our case we will be submitting to a PHP script that will send an email later on. For now, we will insert a `#` pound sign as a placeholder. Second, we will include the method attribute. This tells the browser the type of request we are making to the location we are submitting in the action. Here we will set the value as `post`.
